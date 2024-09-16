@@ -1,12 +1,12 @@
-import express from 'express';
-import taskController from './controller/task.js';
+import express from 'express'
 
+const app = express()
+const port = 3000
 
-const app = express();
-const port = 3010;
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
 
-app.listen(port, ( => {
-  console.log(`App rodando na porta ${port}`)
-}))
-
-app.use('/task', taskController)
+app.listen(port, () => {
+  console.log(`App rodando em http://localhost:${port}`)
+})

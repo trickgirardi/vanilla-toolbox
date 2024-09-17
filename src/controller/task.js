@@ -14,12 +14,4 @@ router.post('/', async (req, res) => {
     res.status(201).send(task)
 })
 
-router.put('/', () => {
-
-})
-
-router.delete('/', () => {
-    res.send('DELETE TASK')
-})
-
 export default router

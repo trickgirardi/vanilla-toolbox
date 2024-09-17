@@ -1,7 +1,7 @@
 let tasks = []
 
 export const listTasks = () => {
-    return []
+    return tasks
 }
 
 export const createTask = (task) => {

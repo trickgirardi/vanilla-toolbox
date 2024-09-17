@@ -1,17 +1,21 @@
 import { Router } from "express"
 
+import { listTasks, createTask } from '../services/task.js'
+
 const router = Router()
 
-router.get('/', () => {
-    res.send('GET TASKS')
+router.get('/', async (req, res) => {
+    const taskList = await listTasks()
+    res.send(taskList)
 })
 
-router.post('/', () => {
-    res.send('POST TASK')
+router.post('/', async (req, res) => {
+    const task = await createTask(req.body)
+    res.status(201).send(task)
 })
 
 router.put('/', () => {
-    res.send('PUT TASK')
+
 })
 
 router.delete('/', () => {

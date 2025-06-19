@@ -1,0 +1,70 @@
+body {
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #1c1c1c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.container {
+  flex-direction: column;
+  background-color: #2f2f2f;
+  padding: 25px;
+  border: 1px solid #6f6f6f;
+  border-radius: 10px;
+  width: 50vh;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#numberHtml {
+  font-size: 120px;
+  color: #efefef;
+}
+
+button {
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.button {
+  padding: 5px;
+  width: 15vh;
+  height: 5vh;
+  border: 1px solid #6f6f6f;
+  border-radius: 5px;
+}
+
+.button:hover {
+  transform: scale(101%);
+  transition: 300ms;
+  opacity: 90%;
+}
+
+.addButton {
+  background-color: #0066dd;
+}
+
+.subtractButton {
+  background-color: #dd6600;
+}
+
+.buttonAlt {
+  background-color: transparent;
+  border: none;
+  color: white;
+  margin-top: 10px;
+}
+
+.buttonAlt:hover {
+  transform: scale(101%);
+  transition: 300ms;
+  opacity: 90%;
+}
